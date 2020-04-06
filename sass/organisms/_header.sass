@@ -26,6 +26,12 @@ header
             display: inline-block
 
         nav
+            +breakpoint($tablet)
+                diplay: none
+
+            +breakpoint($celular)
+                diplay: none
+
             ul
                 li
                     display: inline-block
@@ -47,13 +53,14 @@ header
 
     .textoheader
         float:left
-        max-width: 420px
+        max-width: 397px
         text-weight:
         h1
             color: $laranja !important
             clear: both
             margin: 250px 0 20px 0
             text-shadow: 2px 2px 5px #070a11
+            
 
         p  
             color: $branco
