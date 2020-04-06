@@ -1,0 +1,22 @@
+{
+  "name": "site",
+  "homepage": "https://github.com/kromezinho/tenteoutravez",
+  "authors": [
+    "'kromezinho' <rodrigovprsul@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1"
+  }
+}
