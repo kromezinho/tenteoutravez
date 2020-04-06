@@ -17,6 +17,8 @@
   ],
   "dependencies": {
     "bootstrap": "^4.4.1",
-    "jquery": "^3.4.1"
+    "jquery": "^3.4.1",
+    "bootstrap-sass": "^3.4.1",
+    "breakpoint-sass": "^2.7.1"
   }
 }
