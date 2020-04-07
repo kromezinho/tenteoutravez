@@ -25,13 +25,11 @@ header
         .contato
             display: inline-block
 
-        nav
-            +breakpoint($tablet)
-                diplay: none
+        nav 
 
-            +breakpoint($celular)
-                diplay: none
-
+            +breakpoint(for-phone-only)
+                display: none
+                   
             ul
                 li
                     display: inline-block
