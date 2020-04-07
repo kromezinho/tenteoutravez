@@ -24,14 +24,13 @@ header
         nav,
         .contato
             display: inline-block
-
-        nav 
-
-            +breakpoint(for-phone-only)
-                display: none
-                   
+    
+        nav
+            +breakpoint($celular)
+                display: none 
+  
             ul
-                li
+                li 
                     display: inline-block
                     margin: 0 30px 0 0
                     a
@@ -50,13 +49,13 @@ header
                     color: $branco
 
     .textoheader
-        float:left
+        float: left
         max-width: 397px
         text-weight:
         h1
             color: $laranja !important
             clear: both
-            margin: 250px 0 20px 0
+            margin: 150px 0 20px 0
             text-shadow: 2px 2px 5px #070a11
             
 
