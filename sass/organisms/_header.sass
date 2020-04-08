@@ -6,10 +6,10 @@ header
         image: url(../img/robgcpc.png)
         position: top center
         repeat: no-repeat
-        //attachment: fixed
-        size: cover
+        //size: cover
+        attachment: fixed
         
-        
+          
     .logo
         margin: 30px 0
         float: left
@@ -26,9 +26,7 @@ header
             display: inline-block
     
         nav
-            +breakpoint($celular)
-                display: none 
-  
+        
             ul
                 li 
                     display: inline-block
@@ -49,9 +47,9 @@ header
                     color: $branco
 
     .textoheader
-        float: left
+        //float: left
         max-width: 397px
-        text-weight:
+        max-height: 397px
         h1
             color: $laranja !important
             clear: both

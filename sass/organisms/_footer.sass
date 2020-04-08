@@ -5,7 +5,7 @@ footer
     background: url(../img/footer.png)
         position: bottom center
         repeat: no-repeat
-        size: cover
+        //size: cover
         //attachment: fixed
 
     .iconsfoot
@@ -15,10 +15,12 @@ footer
         .social
         
             li
+                float: right
+                
+                display: inline-block
                 text-align: center
-                display: inline-block!important
-                margin: 0 20px 0 0
-                padding: 1px
+                margin:  !important
+                padding: 10px
                 .insta,
                 .email,
                 .admin
@@ -30,14 +32,9 @@ footer
                     text-align: center
                    
                     color: $branco
-
-
-    h5
-        text-align: center
-        color: $branco
-    
     .telef 
-        margin: -120px 0 0 80px
+        float: left
+        margin-left: 390px
 
         .tel
             max-width: 20px

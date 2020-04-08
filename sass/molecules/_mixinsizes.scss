@@ -1,0 +1,15 @@
+@mixin celular {
+  @media (max-width: #{screen-celular-max}) {
+      @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: #{screen-tablet-max}) {
+      @content;
+  }
+}
+
+
+ // $celular: max-width 440px
+//$tablet: max-width 991px
