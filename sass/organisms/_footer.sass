@@ -8,18 +8,27 @@ footer
         //size: cover
         //attachment: fixed
 
-    .iconsfoot
-        margin: 100px 0  0 450px
-        
-
-        .social
-        
-            li
-                float: right
+    h4
+        color: $branco
+        position: absolute
+        bottom: 110px
+        left: 545px
+        +breakpoint($celular)
+            display: none
                 
+        +breakpoint($tablet)
+            display: none
+
+    .iconsfoot
+        //margin: 100px 0  0 450px
+        max-width: 285px
+        position: absolute
+        bottom: -26px
+        left: 486px
+        .social
+            li             
                 display: inline-block
                 text-align: center
-                margin:  !important
                 padding: 10px
                 .insta,
                 .email,
@@ -33,9 +42,14 @@ footer
                    
                     color: $branco
     .telef 
-        float: left
-        margin-left: 390px
-
+        +breakpoint($celular)
+            display: none
+                
+        +breakpoint($tablet)
+            display: none
+        position: absolute
+        left: 210px
+        bottom: 30px
         .tel
             max-width: 20px
             max-height: 20px
