@@ -16,7 +16,12 @@ section.sobre
         img
             height: 500px
             width: 624px
-//section.itens
+section.itens
     .pins
-        widht: 80px
-        height: 80px
+        +flexbox
+        +align-items(center)
+        +justify-content(space-around)
+        +make-sm-column(10)
+        +make-sm-column-offset(1)
+        [class^="pin-"]
+            
