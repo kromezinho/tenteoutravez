@@ -1,81 +1,83 @@
-header
-    +clearfix
-    min-height: 750px
+body
+    color: $cinzaclaro
+    header
+        +clearfix
+        min-height: 750px
 
-    background:
-        image: url(../img/robgcpc.png)
-        position: top center
-        repeat: no-repeat
-        size: cover
-        //attachment: fixed      
-          
-    .logo
-        margin: 30px 0
-        float: left
-        width: 225px
-        height: 45px       
-
-    .links
-        margin: 45px 0
-        float: right
-        text-align: center
-
-        nav,
-        .contato
-            display: inline-block
-    
-        nav
-            +breakpoint($celular)
-                display: none
-
-            +breakpoint($tablet)
-                display: none
-            ul
-                li 
-                    display: inline-block
-                    margin: 0 30px 0 0
-                    a
-                        color: $cinza
-                        text-transform: lowercase
-        .contato
-            +breakpoint($celular)
-                display: none
-
-            +breakpoint($tablet)
-                display: none
-            li  
-                margin-left: 40px
-                display: inline-block
-                text-transform: lowercase
-                border: 1px solid $laranja
-                background: $laranja
-                padding: 5px 2px 5px 2px
-                border-radius: 5px
-                a
-                    color: $branco
-
-    .textoheader
-        max-width: 397px
-        max-height: 397px
-        h1
-            +breakpoint($celular)
-                +font-size(30px)
-
-            +breakpoint($tablet)
-                +font-size(35px)           
-            color: $laranja !important
-            clear: both
-            margin: 150px 0 20px 0
-            text-shadow: 2px 2px 5px #070a11
+        background:
+            image: url(../img/robgcpc.png)
+            position: top center
+            repeat: no-repeat
+            size: cover
+            //attachment: fixed      
             
+        .logo
+            margin: 30px 0
+            float: left
+            width: 225px
+            height: 45px       
 
-        p
-            +breakpoint($celular)
-                display: none
+        .links
+            margin: 45px 0
+            float: right
+            text-align: center
 
-            +breakpoint($tablet)
-                display: none
-            color: $branco
-            text-shadow: 3px 3px 5px #070a11
-            text-align: justify !important
-            font-size: 20px
+            nav,
+            .contato
+                display: inline-block
+        
+            nav
+                +breakpoint($celular)
+                    display: none
+
+                +breakpoint($tablet)
+                    display: none
+                ul
+                    li 
+                        display: inline-block
+                        margin: 0 30px 0 0
+                        a
+                            color: $cinza
+                            text-transform: lowercase
+            .contato
+                +breakpoint($celular)
+                    display: none
+
+                +breakpoint($tablet)
+                    display: none
+                li  
+                    margin-left: 40px
+                    display: inline-block
+                    text-transform: lowercase
+                    border: 1px solid $laranja
+                    background: $laranja
+                    padding: 5px 2px 5px 2px
+                    border-radius: 5px
+                    a
+                        color: $branco
+
+        .textoheader
+            max-width: 397px
+            max-height: 397px
+            h1
+                +breakpoint($celular)
+                    +font-size(30px)
+
+                +breakpoint($tablet)
+                    +font-size(35px)           
+                color: $laranja !important
+                clear: both
+                margin: 150px 0 20px 0
+                text-shadow: 2px 2px 5px #070a11
+                
+
+            p
+                +breakpoint($celular)
+                    display: none
+
+                +breakpoint($tablet)
+                    display: none
+                color: $branco
+                text-shadow: 3px 3px 5px #070a11
+                text-align: justify !important
+                font-size: 20px

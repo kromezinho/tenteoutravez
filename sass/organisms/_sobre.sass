@@ -1,5 +1,6 @@
 section.sobre   
     .quemsomos
+        margin: 80px
         +make-sm-column(8)
         +make-sm-column-offset(2)
         text-align: center
@@ -15,7 +16,8 @@ section.sobre
     .img-quem-somos
         img
             height: 500px
-            width: 624px
+            width: 900px
+            margin: 75px 0 30px -50px
 section.itens
     .pins
         +flexbox
@@ -24,4 +26,73 @@ section.itens
         +make-sm-column(10)
         +make-sm-column-offset(1)
         [class^="pin-"]
+    .textos
+        .titulopin-1
+            margin: 0 0 0 135px !important
+
+        [class^="titulopin-"]
+            margin: 10px 0 150px 55px
+            display: inline-block
+            max-width: 250px 
+        h4
             
+            text-align: center
+            font-weight: $bold
+        p 
+            text-align: justify
+            font-weight: $regular
+            
+    .nossosservicos
+        h3
+            color: $laranja
+            font-style: italic
+            text-align: center
+            text-transform: UPPERCASE
+        h2 
+            text-align: center
+            font-weight: $bold
+        p.subtitulo
+            text-align: center
+        .textos
+            +flexbox
+            +justify-content(space-around)
+            +align-items(center)
+            +make-sm-column(10)
+            +make-sm-column-offset(1)
+            [class^="retangulo-"]
+                margin: 0 10px 130px 0
+                background-color: $branco
+                width: 260px
+                height: 320px
+                -webkit-box-shadow: 9px 9px 7px -5px rgba(0,0,0,0.75)
+                -moz-box-shadow: 9px 9px 7px -5px rgba(0,0,0,0.75)
+                box-shadow: 9px 9px 7px -5px rgba(0,0,0,0.75)
+                padding: 12px
+                border-radius: 5px
+                p  
+                    max-width: 240px
+                    text-align: justify
+                h4
+                    text-align: center
+                    font-weight: $bold
+.pc-contato
+    float: left
+    max-width: 49%
+    
+    
+.retanguloinfo
+        clear: both
+        float: right
+        margin: 0 10px 130px 50%
+        background-color: $azul
+        width: 50%
+        height: 20%
+        padding: 12px
+        h3
+            color: $laranja
+        p
+            color: $branco
+
+
+.comingsoon-img
+    width: 100%
